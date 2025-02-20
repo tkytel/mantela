@@ -1,6 +1,6 @@
 # Mantela &ndash; Telephone Network Mandala
 
-**Mantela** は SIP 電話網を構成する自分と他の電話局とのつながりを表現することのできるスキームです。
+**Mantela** は、電話網を構成する電話局同士のつながりを表現できる JSON Schema です。
 
 ## ドキュメント
 
@@ -8,4 +8,15 @@
 
 ## ツール群
 
-- [Mantela Viewer](https://kusaremkn.github.io/mantela/)
+<dl>
+<dt>Mantela Viewer</dt>
+<dd><p>
+Repository: <a href="https://github.com/KusaReMKN/mantela-viewer">KusaReMKN/mantela-viewer</a><br>
+Telephone Network Mandala Viewer
+</p></dd>
+<dt>mikopbx-mantela</dt>
+<dd><p>
+Repository: <a href="https://github.com/scrwnl/mikopbx-mantela">scrwnl/mikopbx-mantela</a><br>
+MikoPBX の設定データベースから mantela.json のテンプレートを生成する
+</p></dd>
+</dl>

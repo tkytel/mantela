@@ -28,7 +28,7 @@
           "description": "交換局の識別子を機械の読める形式で指定してください",
           "type": "string"
         },
-        "sipUser": {
+        "sipUsername": {
           "description": "交換局の SIP ユーザ名を指定してください",
           "type": "string"
         },

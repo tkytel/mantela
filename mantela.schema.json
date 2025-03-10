@@ -43,6 +43,9 @@
         "sipPort": {
           "description": "交換局の SIP ポート名やポート番号を指定してください",
           "type": "string"
+        },
+        "note": {
+          "description": "交換局に関する追加の情報を任意形式で指定してください"
         }
       }
     },

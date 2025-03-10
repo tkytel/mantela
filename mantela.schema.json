@@ -60,6 +60,10 @@
             "description": "端末に紐付けられる内線番号を指定してください",
             "type": "string"
           },
+          "identifier": {
+            "description": "端末の識別子を機械の読める形式で指定してください",
+            "type": "string"
+          },
           "type": {
             "description": "端末の種別を指定してください",
             "enum": [

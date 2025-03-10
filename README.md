@@ -11,7 +11,7 @@
 <dl>
 <dt>Mantela Viewer</dt>
 <dd><p>
-Repository: <a href="https://github.com/KusaReMKN/mantela-viewer">KusaReMKN/mantela-viewer</a><br>
+Repository: <a href="https://github.com/tkytel/mantela-viewer">tkytel/mantela-viewer</a><br>
 Telephone Network Mandala Viewer
 </p></dd>
 <dt>mikopbx-mantela</dt>

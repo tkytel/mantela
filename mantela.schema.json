@@ -19,14 +19,18 @@
         },
         "preferredPrefix": {
           "description": "交換局の好ましいプレフィクス番号を指定してください",
-          "type": [ "string", "array" ],
+          "type": [
+            "string",
+            "array"
+          ],
           "items": {
             "type": "string"
           }
         },
         "identifier": {
           "description": "交換局の識別子を機械の読める形式で指定してください",
-          "type": "string"
+          "type": "string",
+          "pattern": "^[\\x21-\\x7E]+$"
         },
         "sipUsername": {
           "description": "交換局の SIP ユーザ名を指定してください",
@@ -62,7 +66,8 @@
           },
           "identifier": {
             "description": "端末の識別子を機械の読める形式で指定してください",
-            "type": "string"
+            "type": "string",
+            "pattern": "^[\\x21-\\x7E]+$"
           },
           "type": {
             "description": "端末の種別を指定してください",
@@ -97,7 +102,8 @@
           },
           "identifier": {
             "description": "交換局の識別子を機械の読める形式で指定してください",
-            "type": "string"
+            "type": "string",
+            "pattern": "^[\\x21-\\x7E]+$"
           },
           "mantela": {
             "description": "その交換局の mantela.json の URL を指定してください",

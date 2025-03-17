@@ -72,15 +72,23 @@
           "type": {
             "description": "端末の種別を指定してください",
             "enum": [
-              "phone",
+              "alias",
+              "application",
+              "cellphone",
+              "dialphone",
               "fax",
-              "modem",
+              "information",
               "main",
-              "switchboard",
+              "modem",
+              "music",
               "other",
+              "phone",
+              "pushphone",
               "reserved",
-              "unused",
-              "unknown"
+              "smartphone",
+              "switchboard",
+              "unknown",
+              "unused"
             ]
           }
         }

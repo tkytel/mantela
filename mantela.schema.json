@@ -47,6 +47,10 @@
         "sipPort": {
           "description": "交換局の SIP ポート名やポート番号を指定してください",
           "type": "string"
+        },
+        "unavailable": {
+          "description": "交換局が（一時的に）利用できないとき、true を指定してください",
+          "type": "boolean"
         }
       }
     },

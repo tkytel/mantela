@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tkytel.github.io/mantela/0.1/providers.json",
+  "title": "Mantela -- Telephone Network Mandala version 0.1.x",
+  "description": "接続されている他の交換局の情報を提供してください",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "description": "交換局の名称を人間の読める形式で指定してください",
+        "type": "string"
+      },
+      "prefix": {
+        "description": "交換局に紐付けられるプレフィクス番号を指定してください",
+        "type": "string"
+      },
+      "identifier": {
+        "description": "交換局の識別子を機械の読める形式で指定してください",
+        "type": "string",
+        "pattern": "^[\\x21-\\x7E]+$"
+      },
+      "mantela": {
+        "description": "その交換局の mantela.json の URL を指定してください",
+        "type": "string"
+      }
+    },
+    "required": [
+      "identifier",
+      "mantela",
+      "name",
+      "prefix"
+    ]
+  }
+}

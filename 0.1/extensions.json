@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tkytel.github.io/mantela/0.1/extensions.json",
+  "title": "Mantela -- Telephone Network Mandala version 0.1.x",
+  "description": "あなた自身の交換局に接続されている端末の情報を提供してください",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "description": "端末の名称を人間の読める形式で指定してください",
+        "type": "string"
+      },
+      "extension": {
+        "description": "端末に紐付けられる内線番号を指定してください",
+        "type": "string"
+      },
+      "identifier": {
+        "description": "端末の識別子を機械の読める形式で指定してください",
+        "type": "string",
+        "pattern": "^[\\x21-\\x7E]+$"
+      },
+      "type": {
+        "description": "端末の種別を指定してください",
+        "enum": [
+          "alias",
+          "application",
+          "cellphone",
+          "conference",
+          "dialphone",
+          "fax",
+          "information",
+          "main",
+          "modem",
+          "music",
+          "other",
+          "phone",
+          "pushphone",
+          "reserved",
+          "smartphone",
+          "switchboard",
+          "unknown",
+          "unused"
+        ]
+      },
+      "transferTo": {
+        "description": "転送を伴うような内線番号において、転送先の端末の識別子を指定してください",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "name",
+      "extension",
+      "type"
+    ],
+    "if": {
+      "properties": {
+        "type": {
+          "enum": [
+            "alias",
+            "main",
+            "switchboard"
+          ]
+        }
+      }
+    },
+    "then": {
+      "required": [
+        "transferTo"
+      ]
+    }
+  }
+}

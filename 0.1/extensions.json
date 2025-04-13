@@ -20,6 +20,10 @@
         "type": "string",
         "pattern": "^[\\x21-\\x7E]+$"
       },
+      "model": {
+        "description": "端末の型式などの情報を記述してください",
+        "type": "string"
+      },
       "type": {
         "description": "端末の種別を指定してください",
         "enum": [

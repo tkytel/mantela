@@ -19,4 +19,9 @@ Telephone Network Mandala Viewer
 Repository: <a href="https://github.com/scrwnl/mikopbx-mantela">scrwnl/mikopbx-mantela</a><br>
 MikoPBX の設定データベースから mantela.json のテンプレートを生成する
 </p></dd>
+<dt>Mantela Editor</dt>
+<dd><p>
+Repository: <a href="https://github.com/tkytel/mantela-editor">tkytel/mantela-editor</a><br>
+Telephone Network Mandala Editor
+</p></dd>
 </dl>

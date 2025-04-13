@@ -24,4 +24,9 @@ MikoPBX の設定データベースから mantela.json のテンプレートを�
 Repository: <a href="https://github.com/tkytel/mantela-editor">tkytel/mantela-editor</a><br>
 Telephone Network Mandala Editor
 </p></dd>
+<dt>Mantela Router</dt>
+<dd><p>
+Repository: <a href="https://github.com/tkytel/mantela-router">tkytel/mantela-router</a><br>
+Telephone Network Mandala Router
+</p></dd>
 </dl>

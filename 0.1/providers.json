@@ -23,6 +23,10 @@
       "mantela": {
         "description": "その交換局の mantela.json の URL を指定してください",
         "type": "string"
+      },
+      "unavailable": {
+        "description": "その交換局との通信が（一時的に）利用できないとき、true を指定してください",
+        "type": "boolean"
       }
     },
     "required": [

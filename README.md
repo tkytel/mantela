@@ -24,6 +24,11 @@ Telephone Network Mandala Editor
 Repository: <a href="https://github.com/tkytel/mantela-router">tkytel/mantela-router</a><br>
 Telephone Network Mandala Router
 </p></dd>
+<dt>Mantela Claimer</dt>
+<dd><p>
+Repository: <a href="https://github.com/tkytel/mantela-claimer">tkytel/mantela-claimer</a><br>
+Telephone Network Mandala Fetcher
+</p></dd>
 <dt>Mantela Fetcher</dt>
 <dd><p>
 Repository: <a href="https://github.com/tkytel/mantela-fetcher">tkytel/mantela-fetcher</a><br>

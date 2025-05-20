@@ -34,6 +34,10 @@ Telephone Network Mandala Fetcher
 Repository: <a href="https://github.com/tkytel/mantela-fetcher">tkytel/mantela-fetcher</a><br>
 Telephone Network Mandala Fetcher
 </p></dd>
+<dd><p>
+Repository: <a href="https://github.com/tkytel/mantela-printer-ps">tkytel/mantela-printer-ps</a><br>
+Telephone Network Printer for PostScript
+</p></dd>
 <dt>mikopbx-mantela</dt>
 <dd><p>
 Repository: <a href="https://github.com/scrwnl/mikopbx-mantela">scrwnl/mikopbx-mantela</a><br>

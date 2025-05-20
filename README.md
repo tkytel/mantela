@@ -27,7 +27,7 @@ Telephone Network Mandala Router
 <dt>Mantela Claimer</dt>
 <dd><p>
 Repository: <a href="https://github.com/tkytel/mantela-claimer">tkytel/mantela-claimer</a><br>
-Telephone Network Mandala Fetcher
+Telephone Network Mandala Claimer
 </p></dd>
 <dt>Mantela Fetcher</dt>
 <dd><p>

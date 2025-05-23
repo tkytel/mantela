@@ -44,6 +44,49 @@
       "description": "交換局の SIP ポート名やポート番号を指定してください",
       "type": "string"
     },
+    "geolocationCoordinates": {
+      "description": "地球上に設置されている交換局の設置されている物理的な位置や高度について指定してください",
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "description": "位置の緯度を十進数の角度で指定してください",
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "description": "位置の経度を十進数の角度で指定してください",
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "altitude": {
+          "description": "位置の海抜高度をメートル単位で指定してください",
+          "type": [ "number", "null" ]
+        },
+        "accuracy": {
+          "description": "経緯度の精度をメートル単位で指定してください",
+          "type": "number",
+          "minimum": 0
+        },
+        "altitudeAccuracy": {
+          "description": "海抜高度の精度をメートル単位で指定してください",
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ]
+    },
     "unavailable": {
       "description": "交換局が（一時的に）利用できないとき、true を指定してください",
       "type": "boolean"

@@ -34,15 +34,15 @@ Telephone Network Mandala Claimer
 Repository: <a href="https://github.com/tkytel/mantela-fetcher">tkytel/mantela-fetcher</a><br>
 Telephone Network Mandala Fetcher
 </p></dd>
-<dt>Mantela Printer PS</dt>
+<dt>Mantela Printer for PostScript</dt>
 <dd><p>
 Repository: <a href="https://github.com/tkytel/mantela-printer-ps">tkytel/mantela-printer-ps</a><br>
-Telephone Network Printer for PostScript
+Telephone Network Mandala Printer for PostScript
 </p></dd>
-<dt>Mantela Maps</dt>
+<dt>Mantela Mapper</dt>
 <dd><p>
-Repository: <a href="https://github.com/tkytel/mantela-maps">tkytel/mantela-maps</a><br>
-Telephone Network Mandala Maps
+Repository: <a href="https://github.com/tkytel/mantela-mapper">tkytel/mantela-mapper</a><br>
+Telephone Network Mandala Mapper
 </p></dd>
 <dt>mikopbx-mantela</dt>
 <dd><p>

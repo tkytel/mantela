@@ -34,6 +34,7 @@ Telephone Network Mandala Claimer
 Repository: <a href="https://github.com/tkytel/mantela-fetcher">tkytel/mantela-fetcher</a><br>
 Telephone Network Mandala Fetcher
 </p></dd>
+<dt>Mantela Printer PS</dt>
 <dd><p>
 Repository: <a href="https://github.com/tkytel/mantela-printer-ps">tkytel/mantela-printer-ps</a><br>
 Telephone Network Printer for PostScript

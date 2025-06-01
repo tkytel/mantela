@@ -96,6 +96,11 @@
           "latitude",
           "longitude"
         ]
+      },
+      "image": {
+        "description": "端末に関連する画像の URI を指定してください",
+        "type": "string",
+        "format": "uri"
       }
     },
     "required": [

@@ -90,6 +90,11 @@
     "unavailable": {
       "description": "交換局が（一時的に）利用できないとき、true を指定してください",
       "type": "boolean"
+    },
+    "image": {
+      "description": "交換局に関連する画像の URI を指定してください",
+      "type": "string",
+      "format": "uri"
     }
   },
   "required": [

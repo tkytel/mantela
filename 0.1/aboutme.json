@@ -29,20 +29,32 @@
       "pattern": "^[\\x21-\\x7E]+$"
     },
     "sipUsername": {
-      "description": "交換局の SIP ユーザ名を指定してください",
+      "description": "交換局の SIP ユーザ名を指定してください（非推奨; c.f.: sipURI）",
+      "deprecated": true,
       "type": "string"
     },
     "sipPassword": {
-      "description": "交換局の SIP パスワードを指定してください",
+      "description": "交換局の SIP パスワードを指定してください（非推奨; c.f.: sipURI）",
+      "deprecated": true,
       "type": "string"
     },
     "sipServer": {
-      "description": "交換局の SIP ホスト名や IP アドレスを指定してください",
+      "description": "交換局の SIP ホスト名や IP アドレスを指定してください（非推奨; c.f.: sipURI）",
+      "deprecated": true,
       "type": "string"
     },
     "sipPort": {
-      "description": "交換局の SIP ポート名やポート番号を指定してください",
+      "description": "交換局の SIP ポート名やポート番号を指定してください（非推奨; c.f.: sipURI）",
+      "deprecated": true,
       "type": "string"
+    },
+    "sipUri": {
+      "description": "交換局の SIP あるいは SIPS の URI を指定してください（c.f.: RFC3261 §19.1）",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
     },
     "geolocationCoordinates": {
       "description": "地球上に設置されている交換局の設置されている物理的な位置や高度について指定してください",

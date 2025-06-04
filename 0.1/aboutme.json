@@ -48,7 +48,7 @@
       "deprecated": true,
       "type": "string"
     },
-    "sipURI": {
+    "sipUri": {
       "description": "交換局の SIP あるいは SIPS の URI を指定してください（c.f.: RFC3261 §19.1）",
       "type": "array",
       "items": {

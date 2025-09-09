@@ -26,25 +26,34 @@
       },
       "type": {
         "description": "端末の種別を指定してください",
-        "enum": [
-          "alias",
-          "application",
-          "cellphone",
-          "conference",
-          "dialphone",
-          "fax",
-          "information",
-          "main",
-          "modem",
-          "music",
-          "other",
-          "phone",
-          "pushphone",
-          "reserved",
-          "smartphone",
-          "switchboard",
-          "unknown",
-          "unused"
+        "anyOf": [
+          {
+            "enum": [
+              "alias",
+              "application",
+              "cellphone",
+              "conference",
+              "dialphone",
+              "fax",
+              "information",
+              "main",
+              "modem",
+              "music",
+              "other",
+              "phone",
+              "pushphone",
+              "reserved",
+              "smartphone",
+              "switchboard",
+              "unknown"
+            ]
+          },
+          {
+            "enum": [
+              "unused"
+            ],
+            "deprecated": true
+          }
         ]
       },
       "transferTo": {

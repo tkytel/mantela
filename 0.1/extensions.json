@@ -101,6 +101,10 @@
         "description": "端末に関連する画像の URI を指定してください",
         "type": "string",
         "format": "uri"
+      },
+      "unavailable": {
+        "description": "端末が（一時的に）利用できないとき、true を指定してください",
+        "type": "boolean"
       }
     },
     "required": [

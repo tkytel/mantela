@@ -3,10 +3,10 @@ name: Publish mantela.schema.json
 # ここは後で調整した方がいいかもね
 on:
   push:
-    tags:
-      - "*"
     branches:
-      - main
+      - "main"
+    tags:
+      - "v*"
 
 permissions:
   contents: read
@@ -22,7 +22,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - name: ごにょごにょ
         run: |
           # 出力用ディレクトリ

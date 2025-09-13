@@ -24,8 +24,27 @@ jobs:
 
       - name: ごにょごにょ
         run: |
-          mkdir build
-          true
+          # 出力用ディレクトリ
+          mkdir ../build
+          IFS=$'\n'
+          git tag | while read tag
+          do
+            git checkout "$tag"
+            if [ -e "mantela.schema.json" ]; then
+              mkdir "../build/${tag}"
+              cp mantela.schema.json "../build/${tag}/"
+            else
+              echo "The file mantela.schema.json is not found in the tag ${tag}."
+            fi
+          done
+
+          # main ブランチの中のmantela.schema.json を build/ に配置する
+          git checkout main
+          if [ -e "mantela.schema.json" ]; then
+            mkdir "../build/"
+            cp mantela.schema.json "../build/"
+          fi
+
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5

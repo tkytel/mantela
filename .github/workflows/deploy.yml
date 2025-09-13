@@ -1,0 +1,40 @@
+name: Publish mantela.schema.json
+
+# ここは後で調整した方がいいかもね
+on:
+  push:
+    tags:
+      - "*"
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: ごにょごにょ
+        run: |
+          mkdir build
+          true
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "build"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

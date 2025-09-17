@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://tkytel.github.io/mantela/0.1/extensions.json",
+  "$id": "https://tkytel.github.io/mantela/0.1.x/extensions.json",
   "title": "Mantela -- Telephone Network Mandala version 0.1.x",
   "description": "あなた自身の交換局に接続されている端末の情報を提供してください",
   "type": "array",

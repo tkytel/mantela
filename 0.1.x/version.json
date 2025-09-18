@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://tkytel.github.io/mantela/0.1/version.json",
+  "$id": "https://tkytel.github.io/mantela/0.1.x/version.json",
   "title": "Mantela -- Telephone Network Mandala version 0.1.x",
   "type": "string",
   "description": "Mantela のバージョンを指定します（通常は '0.1.x' を指定してください）",

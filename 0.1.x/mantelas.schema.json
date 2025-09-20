@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tkytel.github.io/mantela/0.1.x/mantelas.schema.json",
+  "title": "Mantela -- Telephone Network Mandala version 0.1.x",
+  "description": "複数の交換局の相互接続情報をまとめて提供します",
+  "type": "object",
+  "properties": {
+    "mantelas": {
+      "type": "array",
+      "items": {
+        "$ref": "./mantela.schema.json"
+      }
+    }
+  },
+  "required": [
+    "mantelas"
+  ]
+}

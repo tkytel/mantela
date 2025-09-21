@@ -1,50 +1,77 @@
 {
-    "$schema": "https://kusaremkn.github.io/mantela/mantela.schema.json",
-    "version": "0.0.0",
-    "aboutMe": {
-        "identifier": "b0ce607e-a8be-470b-9506-2f9aae1ea317",
-        "name": "Example Mantela JSON",
-        "preferredPrefix": "0510"
-    },
-    "extensions": [
-        {
-            "extension": "7679",
-            "name": "iyokan",
-            "type": "phone"
-        },
-        {
-            "extension": "5175",
-            "name": "ivory",
-            "type": "phone"
-        },
-        {
-            "extension": "5431",
-            "name": "shion",
-            "type": "fax"
-        },
-        {
-            "extension": "3241",
-            "name": "mikan",
-            "type": "phone"
-        },
-        {
-            "extension": "9999",
-            "name": "代表番号",
-            "type": "main"
-        }
+  "$schema": "https://tkytel.github.io/mantela/0.1.x/mantela.schema.json",
+  "version": "0.1.x",
+  "aboutMe": {
+    "name": "Example manTELa",
+    "preferredPrefix": [
+      "0150",
+      "150"
     ],
-    "providers": [
-        {
-            "identifier": "01921813B22461A5DFB84175F093A84B",
-            "mantela": "https://hatsune.example.com/.well-known/mantela.json",
-            "name": "Hatsune Mike",
-            "prefix": "0039"
-        },
-        {
-            "identifier": "01JDR6KSCD81EV82QN46HGQNBA",
-            "mantela": "https://closure.example.com/mantela.json",
-            "name": "Bag Closure Telephone",
-            "prefix": "0108"
-        }
-    ]
+    "identifier": "b0ce607e-a8be-470b-9506-2f9aae1ea317",
+    "sipUri": [
+      "sip:phone.example.com:5060;transport=udp",
+      "sip:phone.example.com:5060;transport=tcp"
+    ],
+    "geolocationCoordinates": {
+      "latitude": 35.68517310604948,
+      "longitude": 139.75279903638477,
+      "accuracy": 1000
+    },
+    "image": "https://github.com/tkytel.png"
+  },
+  "extensions": [
+    {
+      "name": "Test Call",
+      "extension": "1234",
+      "identifier": "E4NZJ4XC",
+      "type": "information"
+    },
+    {
+      "name": "membo",
+      "extension": "1058",
+      "identifier": "78DF9SLZ",
+      "type": "cellphone",
+      "model": "uPhone II; TeleNix",
+      "image": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4THQAAAAvP8APAA/wYv0b6r9Af/7jAWxq222j9NEQBEXQZGiGEgge0+vXSc8c0X8DadvkArb/LuabhidUNSiLKDlESKk5NBwQmnAdj4kumLUGs9Zk1pmRRxqQ1DOGRhPa/Gzo0esOXyTmNUzTAUfzWWYtPlxL43zPzA=="
+    },
+    {
+      "name": "hamu",
+      "extension": "2680",
+      "identifier": "77MC2DCW",
+      "type": "dialphone",
+      "model": "100-AA; WAMAHA RX57i",
+      "unavailable": true
+    },
+    {
+      "name": "all",
+      "extension": "8888",
+      "identifier": "HA4DQOBY",
+      "type": "main",
+      "transferTo": [
+        "78DF9SLZ",
+        "77MC2DCW"
+      ]
+    }
+  ],
+  "providers": [
+    {
+      "name": "Example manTELa",
+      "prefix": "0",
+      "identifier": "b0ce607e-a8be-470b-9506-2f9aae1ea317",
+      "mantela": "https://tkytel.github.io/mantela/example.json"
+    },
+    {
+      "name": "FugaTel",
+      "prefix": "903",
+      "identifier": "01K5NQ22CRQVM18R4X60BYC8AN",
+      "mantela": "https://tkytel.github.io/mantela/example.mantelas.json",
+      "unavailable": true
+    },
+    {
+      "name": "neTel",
+      "prefix": "321",
+      "identifier": "a81027d08378c8af4e63618b625ae05620a460b8",
+      "mantela": "https://sleep.example.com/.well-known/mantela.json"
+    }
+  ]
 }

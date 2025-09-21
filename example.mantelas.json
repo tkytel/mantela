@@ -1,0 +1,73 @@
+{
+  "$schema": "./0.1.x/mantelas.schema.json",
+  "mantelas": [
+    {
+      "version": "0.1.x",
+      "aboutMe": {
+        "name": "HogeTel",
+        "preferredPrefix": [
+          "0921"
+        ],
+        "identifier": "b00a31f6-783c-466a-be19-18eafe6b740f"
+      },
+      "extensions": [
+        {
+          "name": "osakana",
+          "extension": "3474",
+          "type": "pushphone"
+        }
+      ],
+      "providers": [
+        {
+          "name": "FugaTel",
+          "prefix": "0903",
+          "identifier": "01K5NQ22CRQVM18R4X60BYC8AN",
+          "mantela": "https://tkytel.github.io/mantela/example.mantelas.json"
+        }
+      ]
+    },
+    {
+      "version": "0.1.x",
+      "aboutMe": {
+        "name": "FUGATEL",
+        "preferredPrefix": [
+          "0903",
+          "903"
+        ],
+        "identifier": "01K5NQ22CRQVM18R4X60BYC8AN"
+      },
+      "extensions": [
+        {
+          "name": "nyanko",
+          "extension": "6356",
+          "type": "dialphone"
+        },
+        {
+          "name": "wanko",
+          "extension": "4668",
+          "type": "fax"
+        }
+      ],
+      "providers": [
+        {
+          "name": "FUGATEL",
+          "prefix": "0",
+          "identifier": "01K5NQ22CRQVM18R4X60BYC8AN",
+          "mantela": "https://tkytel.github.io/mantela/example.mantelas.json"
+        },
+        {
+          "name": "HogeTel",
+          "prefix": "921",
+          "identifier": "b00a31f6-783c-466a-be19-18eafe6b740f",
+          "mantela": "https://tkytel.github.io/mantela/example.mantelas.json"
+        },
+        {
+          "name": "ManTELa",
+          "prefix": "0150",
+          "identifier": "b0ce607e-a8be-470b-9506-2f9aae1ea317",
+          "mantela": "https://tkytel.github.io/mantela/example.json"
+        }
+      ]
+    }
+  ]
+}

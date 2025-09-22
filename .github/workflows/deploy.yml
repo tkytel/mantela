@@ -1,0 +1,62 @@
+name: Publish mantela.schema.json
+
+# ここは後で調整した方がいいかもね
+on:
+  push:
+    branches:
+      - "main"
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Collect mantela.schema.json from tags
+        run: |
+          # 出力用ディレクトリ
+          mkdir ../build
+          IFS=$'\n'
+          git tag -l "v*" | while read tag
+          do
+            git checkout "$tag"
+            if [ -e "mantela.schema.json" ]; then
+              mkdir "../build/${tag}"
+              cp mantela.schema.json "../build/${tag}/"
+            else
+              echo "The file mantela.schema.json is not found in the tag \"${tag}\"."
+              exit 1
+            fi
+          done
+
+          # main ブランチの中のmantela.schema.json を build/ に配置する
+          git checkout main
+          if [ -e "mantela.schema.json" ]; then
+            cp mantela.schema.json "../build/"
+          else
+            echo "The file mantela.schema.json is not found in the branch \"main\"."
+            exit 1
+          fi
+
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "../build"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
